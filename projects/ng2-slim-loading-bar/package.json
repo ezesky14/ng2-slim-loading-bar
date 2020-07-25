@@ -1,0 +1,15 @@
+{
+  "name": "@ezesky14/ng2-slim-loading-bar",
+  "version": "0.0.211",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ezesky14/ng2-slim-loading-bar.git"
+},
+  "peerDependencies": {
+    "@angular/common": "^10.0.3",
+    "@angular/core": "^10.0.3"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

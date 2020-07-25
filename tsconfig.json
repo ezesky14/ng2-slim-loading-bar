@@ -6,5 +6,21 @@
 */
 {
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./projects/ng2-slim-loading-bar/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ng2-slim-loading-bar/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/demo/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/demo/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/demo/e2e/tsconfig.json"
+    }
+]
 }

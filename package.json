@@ -1,5 +1,5 @@
 {
-  "name": "library-workspace",
+  "name": "ezesky14",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,9 +7,13 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:demo": "ng build demo --aot --prod",
+    "build:lib": "ng build @ezesky14/ng2-slim-loading-bar --prod",
+    "build:ci": "npm run build:demo && npm run build:lib",
+    "docs:gh-pages": "npm run build:demo -- --base-href '/ng2-slim-loading-bar/' && ngh --dir ./dist/demo"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~10.0.2",
     "@angular/common": "~10.0.2",
@@ -19,11 +23,14 @@
     "@angular/platform-browser": "~10.0.2",
     "@angular/platform-browser-dynamic": "~10.0.2",
     "@angular/router": "~10.0.2",
+    "@types/jest": "^26.0.6",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1000.2",
+    "@angular-devkit/build-ng-packagr": "~0.1000.2",
     "@angular/cli": "~10.0.1",
     "@angular/compiler-cli": "~10.0.2",
     "@types/node": "^12.11.1",
@@ -33,13 +40,26 @@
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.0.0",
+    "karma-coverage": "2.0.2",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^10.0.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.9.5"
+    "karma-mocha-reporter": "^2.1.0",
+    "karma-remap-coverage": "~0.1.5",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^4.0.2",
+    "loader-utils": "~2.0.0",
+    "reflect-metadata": "^0.1.13",
+    "semantic-release": "17.1.1",
+    "source-map-loader": "0.1.5",
+    "typescript": "3.9.7",
+    "ts-helpers": "1.1.2",
+    "tslint-loader": "3.5.4",
+    "webpack-bundle-analyzer": "^3.8.0"
   }
 }
