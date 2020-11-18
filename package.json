@@ -55,7 +55,7 @@
     "karma-webpack": "^4.0.2",
     "loader-utils": "~2.0.0",
     "reflect-metadata": "^0.1.13",
-    "semantic-release": "17.1.1",
+    "semantic-release": "17.2.3",
     "source-map-loader": "0.1.5",
     "typescript": "3.9.7",
     "ts-helpers": "1.1.2",
